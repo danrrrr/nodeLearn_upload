@@ -11,8 +11,8 @@ function start(response, postData) {
     'charset=UTF-8" />'+
     '</head>' +
     '<body>'+
-    '<form action="/upload" method="post">'+
-    '<input type="file" name="upload" />'+
+    '<form action="/upload" enctype="multipart/form-data" method="post">'+
+    '<input type="file" name="upload" multiple="multiple"/>'+
     '<br/>' + 
     '<input type="submit" value="Submit text" />'+
     '</form>'+
